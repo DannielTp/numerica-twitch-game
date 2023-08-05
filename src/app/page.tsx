@@ -9,14 +9,17 @@ export default function HomePage() {
 
 	return (
 		<div className='flex flex-col bg-[#21262d] w-screen h-screen justify-center items-center gap-5'>
-			<label htmlFor='names' className='text-[#ffe144] text-3xl font-bold'>
+			<label
+				htmlFor='names'
+				className='text-[#ffe144] text-xl px-2 md:text-3xl text-center font-bold'
+			>
 				Enter the channel names separated by commas.
 			</label>
 
 			<input
 				placeholder='Ej: dannieltp,rothiotome'
 				id='names'
-				className='w-[500px] h-[50px] bg-[#2b303b] text-[#6441a5] text-2xl font-bold text-center rounded'
+				className='w-[300px] md:w-[500px] h-[50px] bg-[#2b303b] text-[#6441a5] text-2xl font-bold text-center rounded'
 				onChange={(e) => {
 					setChannels(e.target.value.replaceAll(' ', '').split(','));
 				}}
@@ -30,7 +33,7 @@ export default function HomePage() {
 			</button>
 
 			{url && (
-				<div className='flex flex-row gap-5'>
+				<div className='flex flex-row flex-wrap items-center justify-center gap-5'>
 					<h2 className='bg-[#2b303b] text-[#ffe144] p-3 rounded text-center font-bold'>
 						Use this link in your OBS: <br />
 						<button
