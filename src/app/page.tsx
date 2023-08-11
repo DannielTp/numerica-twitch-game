@@ -40,7 +40,7 @@ export default function HomePage() {
 							className='flex flex-row gap-2 items-center justify-center text-[#6441a5]'
 							onClick={() => {
 								navigator.clipboard.writeText(
-									`https://numerica.dannieltp.com/${url}`
+									`https://numerica.dannieltp.dev/${url}`
 								);
 
 								alert('Copied to clipboard.');
@@ -52,7 +52,7 @@ export default function HomePage() {
 								height={15}
 								alt='Copy icon'
 							/>
-							https://numerica.dannieltp.com/{url}
+							https://numerica.dannieltp.dev/{url}
 						</button>
 					</h2>
 
