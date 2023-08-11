@@ -10,7 +10,7 @@
 
 ## Website
 
-[https://numerica.dannieltp.com](https://numerica.dannieltp.com)
+[https://numerica.dannieltp.dev](https://numerica.dannieltp.dev)
 
 ## Original unity game _(developed by **rothiotome**)_
 
