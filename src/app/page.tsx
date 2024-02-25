@@ -19,7 +19,7 @@ export default function HomePage() {
 			<input
 				placeholder='Ej: dannieltp,rothiotome'
 				id='names'
-				className='w-[300px] md:w-[500px] h-[50px] bg-[#2b303b] text-[#6441a5] text-2xl font-bold text-center rounded'
+				className='w-[300px] md:w-[500px] h-[50px] bg-[#2b303b] text-[#6441a5] text-2xl font-bold text-center rounded z-10'
 				onChange={(e) => {
 					setChannels(e.target.value.replaceAll(' ', '').split(','));
 				}}
@@ -27,13 +27,13 @@ export default function HomePage() {
 
 			<button
 				onClick={() => setUrl(channels.join('/'))}
-				className='bg-[#ffe144] py-3 px-4 rounded'
+				className='bg-[#ffe144] py-3 px-4 rounded z-10'
 			>
 				START
 			</button>
 
 			{url && (
-				<div className='flex flex-row flex-wrap items-center justify-center gap-5'>
+				<div className='flex flex-row flex-wrap items-center justify-center gap-5 z-10'>
 					<h2 className='bg-[#2b303b] text-[#ffe144] p-3 rounded text-center font-bold'>
 						Use this link in your OBS: <br />
 						<button
